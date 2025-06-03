@@ -10,7 +10,7 @@ class TicTacToeApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Tres en Raya',
+      title: 'TicTacToe',
       home: const TicTacToeGame(),
       debugShowCheckedModeBanner: false,
     );
@@ -60,7 +60,7 @@ class _TicTacToeGameState extends State<TicTacToeGame> {
       }
     }
 
-    if (!board.contains('')) return 'Empate';
+    if (!board.contains('')) return 'Tie';
     return null;
   }
 
@@ -80,7 +80,7 @@ class _TicTacToeGameState extends State<TicTacToeGame> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Tres en Raya'),
+        title: const Text('TicTacToe'),
         centerTitle: true,
       ),
       body: Center(
@@ -89,8 +89,8 @@ class _TicTacToeGameState extends State<TicTacToeGame> {
           children: [
             Text(
               winner == null
-                  ? 'Turno de: $currentPlayer'
-                  : (winner == 'Empate' ? '¡Empate!' : 'Ganador: $winner'),
+                  ? "$currentPlayer's turn"
+                  : (winner == 'Tie' ? 'Tie!' : 'Winner: $winner'),
               style: const TextStyle(fontSize: 20),
             ),
             SizedBox(
@@ -130,7 +130,7 @@ class _TicTacToeGameState extends State<TicTacToeGame> {
             ),
             ElevatedButton(
               onPressed: _resetGame,
-              child: const Text('Reiniciar'),
+              child: const Text('Restart'),
             ),
           ],
         ),
