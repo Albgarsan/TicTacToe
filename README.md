@@ -1,16 +1,17 @@
-# myapp
+# TicTacToe
 
-A new Flutter project.
+· Two player game
 
-## Getting Started
+· Detects who wins and loses, also ties
 
-This project is a starting point for a Flutter application.
+· Direct approach, clean and clear
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+How to run:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+``` bash
+flutter pub get
+flutter run
+```
+AGH project.
+Made by Francisco de Castro Mañas and Alberto García Sanz.
